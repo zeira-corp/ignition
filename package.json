@@ -1,0 +1,22 @@
+{
+  "name": "ignition",
+  "version": "1.0.0",
+  "description": "🤖  start bob",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeira-corp/ignition.git"
+  },
+  "author": "@k33g_org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeira-corp/ignition/issues"
+  },
+  "homepage": "https://github.com/zeira-corp/ignition#readme",
+  "dependencies": {
+    "shelljs": "^0.7.6"
+  }
+}
