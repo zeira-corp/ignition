@@ -31,6 +31,6 @@ process.env["EXPRESS_PORT"] = 8082;
 // here, BoB will talk to himself
 process.env["HUBOT_POST_RESPONSES_URL"] = "http://localhost:8082/hey/iam/bob"
 
-exec(`.~/bob/bob/bin/hubot -a http-adapter`)
+exec(`./home/pi/bob/bob/bin/hubot -a http-adapter`)
 
 console.log("⌛️ Bob is waiting...")
