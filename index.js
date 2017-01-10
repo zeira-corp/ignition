@@ -3,4 +3,5 @@
 
 require('shelljs/global');
 
+// start services
 //exec(`./bin/hubot -a rocketchat`)
