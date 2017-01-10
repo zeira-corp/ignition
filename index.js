@@ -24,13 +24,14 @@ exec('node ~/bob/simple-http/index.js', (code, stdout, stderr) => {
 */
 
 // Hubot part
-// Hubot port
-process.env["EXPRESS_PORT"] = 8082;
-// BoB will post his response(s) here
-// process.env["HUBOT_POST_RESPONSES_URL"] = "http://localhost:8080/hey/iam/bob"
-// here, BoB will talk to himself
-process.env["HUBOT_POST_RESPONSES_URL"] = "http://localhost:8082/hey/iam/bob"
+let cmdHubot = [
+  , `cd bob; `
+  , `node bob.js;`
+].join('');
 
-exec(`./home/pi/bob/bob/bin/hubot -a http-adapter`)
+exec(cmdHubot, (code, stdout, stderr) => {
+  // foo
+  console.log(code)
+})
 
 console.log("⌛️ Bob is waiting...")
