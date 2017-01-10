@@ -3,12 +3,22 @@
 
 require('shelljs/global');
 
-let cmd = [
+let cmdButtonListener = [
   , `cd button-listener; `
   , `sudo python listen.py;`
 ].join('');
 
-exec(cmd, (code, stdout, stderr) => {
+exec(cmdButtonListener, (code, stdout, stderr) => {
+  // foo
+  console.log(code)
+})
+
+let cmdGrovePiHttpServer = [
+  , `cd grove-pi-rest-api; `
+  , `sudo python http-server.py;`
+].join('');
+
+exec(cmdGrovePiHttpServer, (code, stdout, stderr) => {
   // foo
   console.log(code)
 })
